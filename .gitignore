@@ -28,3 +28,4 @@ release/dirtbot/Source SDK Base/insurgency/addons/rcbot2/config/
 release/dirtbot/Source SDK Base/NeotokyoSource/addons/rcbot2/config/
 release/dirtbot/Team Fortress 2/tf/addons/rcbot2/config/
 release/dirtbot/**/*.dll
+release/dirtbot/**/*.pdb

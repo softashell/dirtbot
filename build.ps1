@@ -62,5 +62,7 @@ Copy-item -Path "loader\RCBot2Meta\RCBot2Meta.dll" -Destination "..\release\dirt
 Copy-item -Path "..\package\config\" -Destination "..\release\dirtbot\Source SDK Base\insurgency\addons\rcbot2\" -Recurse -Force
 
 Copy-Item -Path "rcbot.2.ep1\rcbot.2.ep1.dll" -Destination "..\release\dirtbot\Source SDK Base\NeotokyoSource\addons\rcbot2\bin\"
+Copy-Item -Path "rcbot.2.ep1\rcbot.2.ep1.pdb" -Destination "..\release\dirtbot\Source SDK Base\NeotokyoSource\addons\rcbot2\bin\"
 Copy-item -Path "loader\RCBot2Meta\RCBot2Meta.dll" -Destination "..\release\dirtbot\Source SDK Base\NeotokyoSource\addons\rcbot2\bin\"
+Copy-item -Path "loader\RCBot2Meta\RCBot2Meta.pdb" -Destination "..\release\dirtbot\Source SDK Base\NeotokyoSource\addons\rcbot2\bin\"
 Copy-item -Path "..\package\config\" -Destination "..\release\dirtbot\Source SDK Base\NeotokyoSource\addons\rcbot2\" -Recurse -Force
