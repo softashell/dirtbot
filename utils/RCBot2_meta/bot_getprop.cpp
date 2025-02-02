@@ -579,6 +579,14 @@ void CClassInterface:: init ()
 		DEFINE_GETPROP(GETPROP_CSS_HOSTAGE_RESCUED, "CHostage", "m_isRescued", 0);
 		DEFINE_GETPROP(GETPROP_CSS_HOSTAGE_LEADER, "CHostage", "m_leader", 0);
 
+		// Neotokyo
+		DEFINE_GETPROP(GETPROP_NEO_XP, "CNEO_Player", "m_iXP", 0);
+		DEFINE_GETPROP(GETPROP_NEO_LOADOUT, "CNEO_Player", "m_iLoadoutWepChoice", 0);
+		DEFINE_GETPROP(GETPROP_NEO_CLASS, "CNEO_Player", "m_iNeoClass", 0);
+		DEFINE_GETPROP(GETPROP_NEO_NEXTCLASS, "CNEO_Player", "m_iNextSpawnClassChoice", 0);
+		DEFINE_GETPROP(GETPROP_NEO_SKIN, "CNEO_Player", "m_iNeoSkin", 0);
+		DEFINE_GETPROP(GETPROP_NEO_STAR, "CNEO_Player", "m_iNeoStar", 0);
+
 		// Generic
 		DEFINE_GETPROP(GETPROP_PLAYER_FOV, "CBasePlayer", "m_iFOV", 0);
 		DEFINE_GETPROP(GETPROP_PLAYER_LIFESTATE, "CBasePlayer", "m_lifeState", 0);

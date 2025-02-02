@@ -844,6 +844,12 @@ const static char* szWeaponFlags[] = {
 
 void CWeapons::loadWeapons(const char* szWeaponListName, WeaponsData_t* pDefault)
 {
+	// TODO: Figure out why loading list crashes, ignore if list name is NEOTOKYO
+	if (std::strcmp(szWeaponListName, "NEOTOKYO") == 0)
+	{
+		szWeaponListName = nullptr;
+	}
+
 	if (szWeaponListName != nullptr && szWeaponListName[0] != 0)
 	{
 		KeyValues* kv = new KeyValues("Weapons");
