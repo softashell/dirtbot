@@ -184,6 +184,7 @@ typedef enum : std::uint8_t
 	MOD_SYNERGY,
 	MOD_DOD,
 	MOD_INSURGENCY,
+	MOD_NEOTOKYO,
 	MOD_CUSTOM,
 	MOD_ANY,
 	MOD_MAX

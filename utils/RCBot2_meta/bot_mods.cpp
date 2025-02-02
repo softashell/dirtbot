@@ -45,6 +45,7 @@
 #include "bot_waypoint.h"
 #include "bot_waypoint_locations.h"
 #include "bot_perceptron.h"
+#include "bot_neotokyo.h"
 
 #include <cstring>
 
@@ -188,6 +189,11 @@ void CBotMods::parseFile()
 				modtype = MOD_DOD;
 				curmod = new CDODMod();
 			}
+			else if (!strcmpi("NEOTOKYO", val))
+			{
+				modtype = MOD_NEOTOKYO;
+				curmod = new CNeotokyoMod();
+			}
 			else
 				curmod = new CBotMod();
 		}
@@ -213,6 +219,8 @@ void CBotMods::parseFile()
 				bottype = BOTTYPE_DOD;
 			else if (!strcmpi("SYNERGY", val))
 				bottype = BOTTYPE_SYN;
+			else if (!strcmpi("NEOTOKYO", val))
+				bottype = BOTTYPE_NEOTOKYO;
 		}
 		else if (curmod && !strcmpi(key, "gamedir"))
 		{
@@ -251,6 +259,7 @@ void CBotMods::readMods()
 
 	m_Mods.emplace_back(new CHLDMSourceMod());
 	m_Mods.emplace_back(new CInsurgencyMod());
+	m_Mods.emplace_back(new CNeotokyoMod());
 
 	// Look for extra MODs
 

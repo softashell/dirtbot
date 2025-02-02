@@ -68,6 +68,7 @@
 #include "bot_hl1dmsrc_bot.h"
 #include "bot_fortress.h"
 #include "bot_synergy.h"
+#include "bot_neotokyo.h"
 #include "bot_visibles.h"
 #include "bot_weapons.h"
 #include "bot_profile.h"

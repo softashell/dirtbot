@@ -90,6 +90,7 @@ typedef enum : std::uint8_t
 	BOTTYPE_SYN,
 	BOTTYPE_BMS,
 	BOTTYPE_INSURGENCY,
+	BOTTYPE_NEOTOKYO,
 	BOTTYPE_MAX
 }eBotType;
 
@@ -1430,6 +1431,27 @@ public:
 	}
 };
 */
+
+class CNeotokyoMod : public CBotMod
+{
+public:
+	CNeotokyoMod()
+	{
+		setup("NeotokyoSource", MOD_NEOTOKYO, BOTTYPE_NEOTOKYO, "NEOTOKYO");
+	}
+
+	void initMod() override;
+	void mapInit() override;
+
+	const char* getPlayerClass() override
+	{
+		return "CNEOPlayer";
+	}
+
+	static int	numClassOnTeam(int iTeam, int iClass);
+	static int	preferredClassOnTeam(int iTeam);
+	static int  getRankFromXP(int xp);
+};
 
 class CBotMods
 {

@@ -168,6 +168,12 @@ typedef enum : std::int16_t
 	GETPROP_CSS_HOSTAGE_HEALTH,
 	GETPROP_CSS_HOSTAGE_RESCUED,
 	GETPROP_CSS_HOSTAGE_LEADER,
+	GETPROP_NEO_XP,
+	GETPROP_NEO_LOADOUT,
+	GETPROP_NEO_CLASS,
+	GETPROP_NEO_NEXTCLASS,
+	GETPROP_NEO_SKIN,
+	GETPROP_NEO_STAR,
 	GET_PROPDATA_MAX
 }getpropdata_id;
 
@@ -886,6 +892,31 @@ public:
 	static edict_t* getCSHostageLeader(edict_t* pHostage)
 	{
 		return g_GetProps[GETPROP_CSS_HOSTAGE_LEADER].getEntity(pHostage);
+	}
+
+	static int getNEOPlayerXP(edict_t* pPlayer)
+	{
+		return g_GetProps[GETPROP_NEO_XP].getInt(pPlayer, 0);
+	}
+
+	static int getNEOPlayerLoadout(edict_t* pPlayer)
+	{
+		return g_GetProps[GETPROP_NEO_XP].getInt(pPlayer, 0);
+	}
+
+	static int getNEOPlayerClass(edict_t* pPlayer)
+	{
+		return g_GetProps[GETPROP_NEO_CLASS].getInt(pPlayer, 0);
+	}
+
+	static int getNEOPlayerNextClass(edict_t* pPlayer)
+	{
+		return g_GetProps[GETPROP_NEO_NEXTCLASS].getInt(pPlayer, 0);
+	}
+
+	static int getNEOPlayerStar(edict_t* pPlayer)
+	{
+		return g_GetProps[GETPROP_NEO_STAR].getInt(pPlayer, 0);
 	}
 
 private:
