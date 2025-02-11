@@ -3212,6 +3212,9 @@ void CBots :: init ()
 		case BOTTYPE_SYN:
 			m_Bots[i] = new CBotSynergy();
 			break;
+		case BOTTYPE_NEOTOKYO:
+			m_Bots[i] = new CBotNeotokyo();
+			break;
 		//case BOTTYPE_BMS: //TODO: Add Black Mesa Support [APG]RoboCop[CL]
 		//	m_Bots[i] = new CBotBMS();
 		//	break;
